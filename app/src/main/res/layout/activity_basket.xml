@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.BasketActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/tool_bar_background"
+        android:id="@+id/toolBarBasket">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/arrow_left"
+            android:contentDescription="@string/app_name"
+            android:id="@+id/basketBack"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textSize="17sp"
+            android:textColor="@color/colorWhite"
+            android:text="@string/your_basket"/>
+
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"
+        android:layout_below="@+id/toolBarBasket"
+        android:layout_above="@id/relativeLayoutTotalPrice">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="7dp"
+                android:textColor="@color/black_button"
+                android:text="@string/wash_up_fold"
+                android:textStyle="bold"
+                android:id="@+id/textWashUpFold"/>
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignTop="@+id/textWashUpFold"
+                android:layout_marginEnd="7dp"
+                android:src="@drawable/ic_delete"
+                android:contentDescription="@string/app_name"
+                android:id="@+id/imageViewBasketWashFoldDelete"/>
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignTop="@+id/textWashUpFold"
+                android:layout_marginEnd="7dp"
+                android:src="@drawable/ic_pencil"
+                android:contentDescription="@string/app_name"
+                android:layout_toStartOf="@+id/imageViewBasketWashFoldDelete"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/textWashUpFold"
+                android:background="@color/colorBlack"
+                android:layout_marginTop="5dp"
+                android:id="@+id/viewWashFoldBasket"/>
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_below="@+id/viewWashFoldBasket"
+                android:layout_alignStart="@+id/textWashUpFold"
+                android:layout_marginTop="5dp"
+                android:contentDescription="@string/app_name"
+                android:id="@+id/imageViewBasketMen"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/imageViewBasketMen"
+                android:layout_below="@+id/viewWashFoldBasket"
+                android:layout_marginTop="5dp"
+                android:text="@string/men"
+                android:id="@+id/textBasketWashFoldMen"
+                android:layout_marginStart="5dp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/relativeLayoutBasketMen"
+                android:layout_below="@+id/imageViewBasketMen"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="7dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:text="@string/price"
+                    android:textSize="11sp"
+                    tools:ignore="SmallSp"
+                    android:id="@+id/textBasketMenPrice"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toStartOf="@+id/textBasketMenPrice"
+                    android:layout_marginEnd="30dp"
+                    android:textSize="11sp"
+                    tools:ignore="SmallSp"
+                    android:text="@string/unit_price"
+                    android:id="@+id/textBasketMenUnit"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textBasketMenPrice"
+                    android:text="2 x T-Shirt"
+                    android:id="@+id/textTShirt"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textTShirt"
+                    android:layout_marginTop="5dp"
+                    android:text="8 x Shirt"
+                    android:id="@+id/textShirt"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textShirt"
+                    android:id="@+id/textTrouser"
+                    android:text="5 x Trouser"
+                    android:layout_marginTop="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textTrouser"
+                    android:layout_marginTop="5dp"
+                    android:text="1 x Jeans"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toStartOf="@+id/textBasketMenPrice"
+                    android:layout_below="@+id/textBasketMenUnit"
+                    android:layout_marginEnd="30dp"
+                    android:id="@+id/textShirtUnit"
+                    android:text="5.00"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toStartOf="@+id/textBasketMenPrice"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@+id/textShirtUnit"
+                    android:text="5.00"
+                    android:id="@+id/textShirtyUnit"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toStartOf="@+id/textBasketMenPrice"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@+id/textShirtyUnit"
+                    android:text="5.00"
+                    android:id="@+id/textTrouserUnit" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toStartOf="@+id/textBasketMenPrice"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@+id/textTrouserUnit"
+                    android:text="5.00"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_below="@+id/textBasketMenPrice"
+                    android:layout_marginTop="5dp"
+                    android:text="10.00"
+                    android:id="@+id/textShirtTotal"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textShirtTotal"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="5dp"
+                    android:text="40.00"
+                    android:id="@+id/textShirtyTotal"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textShirtyTotal"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="5dp"
+                    android:text="25.00"
+                    android:id="@+id/textTrouserTotal"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textTrouserTotal"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="5dp"
+                    android:text="5.00"
+                    android:id="@+id/textJeansTotal"/>
+
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_below="@+id/relativeLayoutBasketMen"
+                android:layout_alignStart="@+id/imageViewBasketMen"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/ic_plus_circle_outline"
+                android:contentDescription="@string/app_name"
+                android:id="@+id/imageViewBasketWomen"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/imageViewBasketWomen"
+                android:layout_below="@+id/relativeLayoutBasketMen"
+                android:layout_marginTop="10dp"
+                android:layout_alignStart="@+id/textBasketWashFoldMen"
+                android:text="@string/women"
+                android:id="@+id/textBasketWashFoldWomen"/>
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_below="@+id/imageViewBasketWomen"
+                android:layout_alignStart="@+id/imageViewBasketMen"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/ic_plus_circle_outline"
+                android:contentDescription="@string/app_name"
+                android:id="@+id/imageViewBasketBedding"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/textBasketWashFoldMen"
+                android:layout_below="@+id/textBasketWashFoldWomen"
+                android:layout_marginTop="10dp"
+                android:text="@string/bedding"
+                android:id="@+id/textBasketWashFoldBedding"/>
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_below="@+id/imageViewBasketBedding"
+                android:layout_alignStart="@+id/imageViewBasketMen"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/ic_plus_circle_outline"
+                android:contentDescription="@string/app_name"
+                android:id="@+id/imageViewBasketHousehold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/textBasketWashFoldMen"
+                android:layout_below="@+id/textBasketWashFoldBedding"
+                android:layout_marginTop="10dp"
+                android:text="@string/household"
+                android:id="@+id/textBasketWashFoldHousehold"/>
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnSchedulePickUp"
+        android:background="@color/colorText"
+        android:id="@+id/relativeLayoutTotalPrice"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorWhite"
+            android:text="@string/total_price"
+            android:textSize="20sp"
+            android:gravity="center_horizontal"
+            android:paddingTop="10dp"
+            android:id="@+id/textBasketTotalPrice"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textBasketTotalPrice"
+            android:gravity="center_horizontal"
+            android:textColor="@color/colorWhite"
+            android:text="25 items Added"
+            android:paddingBottom="7dp"/>
+
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/black_button"
+        android:gravity="center_horizontal"
+        android:textSize="19sp"
+        android:textColor="@color/colorWhite"
+        android:text="@string/schedule_pick_up"
+        android:textAllCaps="false"
+        android:paddingTop="10dp"
+        android:id="@+id/btnSchedulePickUp"/>
+</RelativeLayout>

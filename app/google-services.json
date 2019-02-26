@@ -1,0 +1,59 @@
+{
+  "project_info": {
+    "project_number": "17838718576",
+    "firebase_url": "https://sparkle-abdb0.firebaseio.com",
+    "project_id": "sparkle-abdb0",
+    "storage_bucket": "sparkle-abdb0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:17838718576:android:21f064b002e5f3dd",
+        "android_client_info": {
+          "package_name": "ke.co.ekenya.ksiundu.sparkle"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "17838718576-oqgql2p9qoqu2dlfmfs3v03404lm5pi7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "ke.co.ekenya.ksiundu.sparkle",
+            "certificate_hash": "cb7365a17847e22c03b0979e1e51cf7dc7ddee22"
+          }
+        },
+        {
+          "client_id": "17838718576-e2ruv00dqqtmr36tdeihh187d5h3e7sj.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "17838718576-e2ruv00dqqtmr36tdeihh187d5h3e7sj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDwQNf7aTEs1U3t4pVJp9gSd8rqvrDy3PI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "17838718576-e2ruv00dqqtmr36tdeihh187d5h3e7sj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

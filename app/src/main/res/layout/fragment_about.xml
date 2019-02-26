@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.AboutFragment">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:id="@+id/current_location"
+        android:src="@drawable/image_map"
+        android:scaleType="fitXY"
+        android:contentDescription="@string/app_name"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/current_location"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="7dp"
+        android:textStyle="bold"
+        android:textColor="@color/black_button"
+        android:text="@string/mon_fri"
+        android:id="@+id/textMonFri"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textMonFri"
+        android:layout_alignStart="@+id/textMonFri"
+        android:layout_marginTop="7dp"
+        android:textStyle="bold"
+        android:textColor="@color/black_button"
+        android:text="@string/sat"
+        android:id="@+id/textSat"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textSat"
+        android:layout_alignStart="@+id/textMonFri"
+        android:layout_marginTop="7dp"
+        android:textStyle="bold"
+        android:textColor="@color/black_button"
+        android:id="@+id/textSun"
+        android:text="@string/sun"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textSun"
+        android:layout_alignStart="@+id/textMonFri"
+        android:layout_marginTop="7dp"
+        android:textStyle="bold"
+        android:textColor="@color/black_button"
+        android:text="@string/desc"
+        android:id="@+id/textDesc"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/textDesc"
+        android:layout_below="@+id/textSun"
+        android:layout_marginTop="7dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginEnd="10dp"
+        android:text="@string/description"/>
+
+</RelativeLayout>

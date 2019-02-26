@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.FinalScheduleActivity"
+    android:background="@color/bgForgot">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/tool_bar_background"
+        android:id="@+id/toolBarFinalSchedule">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/arrow_left"
+            android:contentDescription="@string/app_name"
+            android:id="@+id/finalScheduleBack"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textSize="21sp"
+            android:textColor="@color/colorWhite"
+            android:text="@string/schedule_pick_up"/>
+
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolBarFinalSchedule"
+        android:id="@+id/cardViewSchedulePickUpFinal">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginStart="50dp"
+                android:src="@drawable/icon_location"
+                android:contentDescription="@string/app_name"
+                android:id="@+id/imageScheduleLocation"/>
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:text="@string/location"
+                android:layout_below="@+id/imageScheduleLocation"
+                android:layout_marginStart="45dp"
+                android:textColor="@color/colorText"
+                android:id="@+id/textScheduleLocation"
+                tools:ignore="SmallSp" />
+
+            <View
+                android:layout_width="100dp"
+                android:layout_height="1dp"
+                android:layout_toEndOf="@+id/imageScheduleLocation"
+                android:background="@color/bgForgot"
+                android:layout_marginTop="25dp"
+                android:id="@+id/viewScheduleLocation"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignTop="@+id/imageScheduleLocation"
+                android:layout_toEndOf="@+id/viewScheduleLocation"
+                android:layout_marginStart="5dp"
+                android:src="@drawable/icon_date_time"
+                android:contentDescription="@string/app_name"
+                android:id="@+id/imageScheduleDateTime"
+                android:alpha="0.6"/>
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageScheduleDateTime"
+                android:layout_toEndOf="@id/viewScheduleLocation"
+                android:layout_alignBottom="@+id/textScheduleLocation"
+                android:textSize="14sp"
+                android:layout_marginStart="-5dp"
+                android:alpha="0.6"
+                tools:ignore="SmallSp"
+                android:text="@string/date"/>
+
+            <View
+                android:layout_width="100dp"
+                android:layout_height="1dp"
+                android:layout_toEndOf="@+id/imageScheduleDateTime"
+                android:background="@color/bgForgot"
+                android:layout_marginTop="25dp"
+                android:id="@+id/viewScheduleDateTime"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignTop="@+id/imageScheduleLocation"
+                android:layout_toEndOf="@+id/viewScheduleDateTime"
+                android:layout_marginStart="5dp"
+                android:src="@drawable/icon_payment"
+                android:contentDescription="@string/app_name"
+                android:id="@+id/imageSchedulePayment"
+                android:alpha="0.6"/>
+
+            <TextView
+                android:layout_width="59dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageScheduleDateTime"
+                android:layout_toEndOf="@id/viewScheduleDateTime"
+                android:layout_alignBottom="@+id/textScheduleLocation"
+                android:textSize="14sp"
+                android:layout_marginStart="1.5dp"
+                android:alpha="0.6"
+                tools:ignore="SmallSp"
+                android:text="@string/payment"/>
+
+            <View
+                android:layout_width="100dp"
+                android:layout_height="1dp"
+                android:layout_toEndOf="@+id/imageSchedulePayment"
+                android:background="@color/bgForgot"
+                android:layout_marginTop="25dp"
+                android:id="@+id/viewSchedulePayment"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignTop="@+id/imageScheduleLocation"
+                android:layout_toEndOf="@+id/viewSchedulePayment"
+                android:layout_marginStart="5dp"
+                android:src="@drawable/icon_complete"
+                android:contentDescription="@string/app_name"
+                android:id="@+id/imageScheduleComplete"
+                android:alpha="0.6"/>
+
+            <TextView
+                android:layout_width="65dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageScheduleDateTime"
+                android:layout_toEndOf="@id/viewSchedulePayment"
+                android:layout_alignBottom="@+id/textScheduleLocation"
+                android:textSize="14sp"
+                android:layout_marginStart="-1.5dp"
+                android:alpha="0.6"
+                tools:ignore="SmallSp"
+                android:text="@string/complete"/>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+    
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/cardViewSchedulePickUpFinal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:src="@drawable/icon_final"
+        android:scaleType="centerInside"
+        android:contentDescription="@string/schedule_pick_up"
+        android:id="@+id/imageSchedulePikUp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="21sp"
+        android:layout_below="@+id/imageSchedulePikUp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/thank_you_for_choosing_us"
+        android:textColor="@color/colorBlack"
+        android:id="@+id/textThankYouSchedule"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textThankYouSchedule"
+        android:layout_centerHorizontal="true"
+        android:text="@string/your_pickup_has_been_confirmed"
+        android:textStyle="bold"
+        android:id="@+id/textConfirmSchedule"/>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textConfirmSchedule">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="10dp"
+                android:text="@string/order_id"
+                android:textColor="@color/black_button"
+                android:id="@+id/textScheduleOrderId"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/textScheduleOrderId"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="10dp"
+                android:text="@string/_2017121085"
+                android:textSize="12sp"
+                android:id="@+id/textScheduleOrderIdentifier"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/textScheduleOrderId"
+                android:background="@color/bgForgot"
+                android:layout_marginTop="15dp"
+                android:id="@+id/viewScheduleOrderId"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/viewScheduleOrderId"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/black_button"
+                android:text="@string/final_amount"
+                android:id="@+id/textViewScheduleFinalAmount"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/textViewScheduleFinalAmount"
+                android:background="@color/bgForgot"
+                android:layout_marginTop="15dp"
+                android:id="@+id/viewScheduleFinalAmount"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="10dp"
+                android:text="@string/pickup_date_amp_time"
+                android:layout_below="@+id/viewScheduleFinalAmount"
+                android:textColor="@color/black_button"
+                android:id="@+id/textSchedulePickUpDate"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textSchedulePickUpDate"
+                android:layout_marginStart="10dp"
+                android:text="@string/monday_10_nov_2017_at_10_00_am_02_00pm"
+                android:textSize="12sp"
+                android:id="@+id/textSchedulePickDate"/>
+
+
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/black_button"
+        android:text="@string/go_to_order_status"
+        android:textAllCaps="false"
+        android:textColor="@color/colorWhite"
+        android:textSize="17sp"
+        android:id="@+id/order_status"/>
+
+</RelativeLayout>

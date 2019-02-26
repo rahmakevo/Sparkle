@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ke.co.ekenya.ksiundu.sparkle">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ui.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.MainActivity" />
+        <activity
+            android:name=".auth.LoginActivity"
+            android:parentActivityName=".ui.MainActivity" />
+        <activity
+            android:name=".auth.ForgotPasswordActivity"
+            android:parentActivityName=".auth.LoginActivity" />
+        <activity
+            android:name=".auth.RegisterOneActivity"
+            android:parentActivityName=".auth.LoginActivity" />
+        <activity
+            android:name=".auth.RegisterTwoActivity"
+            android:parentActivityName=".auth.RegisterOneActivity" />
+        <activity
+            android:name=".ui.HomeActivity"
+            android:label="@string/title_activity_home"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".ui.WashFoldActivity"
+            android:parentActivityName=".ui.HomeActivity" />
+        <activity
+            android:name=".ui.AllOrdersActivity"
+            android:parentActivityName=".ui.HomeActivity" />
+        <activity
+            android:name=".ui.OrderDetailActivity"
+            android:parentActivityName=".ui.AllOrdersActivity" />
+        <activity
+            android:name=".ui.NotificationsActivity"
+            android:parentActivityName=".ui.HomeActivity" />
+        <activity
+            android:name=".ui.Refer_Earn_Activity"
+            android:parentActivityName=".ui.HomeActivity" />
+        <activity
+            android:name=".ui.AboutUsActivity"
+            android:parentActivityName=".ui.HomeActivity" />
+        <activity
+            android:name=".ui.BasketActivity"
+            android:parentActivityName=".ui.WashFoldActivity" />
+        <activity
+            android:name=".ui.SchedulePickUp"
+            android:parentActivityName=".ui.BasketActivity" />
+        <activity
+            android:name=".ui.ScheduleDateTime"
+            android:parentActivityName=".ui.SchedulePickUp" />
+        <activity
+            android:name=".ui.SchedulePayment"
+            android:parentActivityName=".ui.ScheduleDateTime" />
+        <activity
+            android:name=".ui.LoadWalletActivity"
+            android:parentActivityName=".ui.SchedulePayment" />
+        <activity
+            android:name=".ui.LoadWalletTwoActivity"
+            android:parentActivityName=".ui.LoadWalletActivity" />
+        <activity
+            android:name=".ui.FinalScheduleActivity"
+            android:parentActivityName=".ui.SchedulePayment" />
+        <activity
+            android:name=".ui.WalletActivity"
+            android:parentActivityName=".ui.HomeActivity" />
+        <activity
+            android:name=".ui.ProfileActivity"
+            android:parentActivityName=".ui.HomeActivity"/>
+    </application>
+
+</manifest>

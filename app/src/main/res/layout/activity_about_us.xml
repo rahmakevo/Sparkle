@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.AboutUsActivity"
+    android:background="@color/colorWhite">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:src="@drawable/images_about"
+        android:scaleType="centerCrop"
+        android:layout_height="140dp" />
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:id="@+id/appBarAboutUs"
+        android:background="@android:color/transparent">
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/toolBarAboutUs"
+            android:background="#33225163">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/arrow_left"
+                android:id="@+id/aboutUsBack"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textSize="17sp"
+                android:textColor="@color/colorWhite"
+                android:text="@string/about"/>
+
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black_button"
+        android:layout_below="@+id/appBarAboutUs"
+        android:layout_marginTop="7dp"
+        android:layout_marginStart="7dp"
+        android:textSize="17sp"
+        android:text="@string/about_title"
+        android:textStyle="bold"
+        android:id="@+id/textAboutTitle"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textAboutTitle"
+        android:layout_alignStart="@+id/textAboutTitle"
+        android:text="@string/about_status"
+        android:textSize="10sp"
+        tools:ignore="SmallSp"
+        android:textColor="@color/colorText"
+        android:id="@+id/textAboutStatus"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/textAboutStatus"
+        android:background="@color/bgForgot"
+        android:id="@+id/viewAboutStatus"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/viewAboutStatus"
+        android:background="@color/colorWhite"
+        android:layout_marginTop="7dp"
+        android:paddingTop="7dp"
+        android:paddingBottom="7dp"
+        android:id="@+id/linearLayoutAbout">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="17sp"
+            android:textColor="@color/black_button"
+            android:text="@string/services_about"
+            android:id="@+id/textAboutServices"
+            android:gravity="center_horizontal"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="17sp"
+            android:textColor="@color/black_button"
+            android:gravity="center_horizontal"
+            android:id="@+id/textAboutPager"
+            android:text="@string/about_us"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="17sp"
+            android:id="@+id/textAboutReviews"
+            android:textColor="@color/black_button"
+            android:gravity="center_horizontal"
+            android:text="@string/reviews_about"/>
+
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayoutAbout"
+        android:id="@+id/viewPagerAbout">
+
+    </android.support.v4.view.ViewPager>
+
+</RelativeLayout>

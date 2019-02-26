@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.InquiryFragment"
+    android:background="#f1f2f5">
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_fullstatement"
+        android:layout_marginTop="25dp"
+        android:layout_marginStart="10dp"
+        android:contentDescription="@string/app_name"
+        android:id="@+id/imageFullStatement"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/imageFullStatement"
+        android:layout_alignTop="@+id/imageFullStatement"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:textColor="@color/colorText"
+        android:text="@string/full_stat" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/imageFullStatement"
+        android:backgroundTint="#f1f2f5"
+        android:layout_marginTop="10dp"
+        android:id="@+id/viewFullStatement"/>
+
+    <ImageView
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/imageFullStatement"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="15dp"
+        android:src="@drawable/arrow_right"
+        android:contentDescription="@string/app_name"/>
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_mini_statement"
+        android:layout_marginTop="25dp"
+        android:layout_marginStart="10dp"
+        android:layout_below="@+id/viewFullStatement"
+        android:contentDescription="@string/app_name"
+        android:id="@+id/imageMiniStatement"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/imageMiniStatement"
+        android:layout_alignTop="@+id/imageMiniStatement"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:textColor="@color/colorText"
+        android:text="@string/mini_stat" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/imageMiniStatement"
+        android:backgroundTint="#f1f2f5"
+        android:layout_marginTop="10dp"
+        android:id="@+id/viewMiniStatement"/>
+
+    <ImageView
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/imageMiniStatement"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="15dp"
+        android:src="@drawable/arrow_right"
+        android:contentDescription="@string/app_name"/>
+
+</RelativeLayout>

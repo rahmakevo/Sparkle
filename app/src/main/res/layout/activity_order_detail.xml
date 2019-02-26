@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.OrderDetailActivity"
+    android:background="@color/bgForgot">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/tool_bar_background"
+        android:id="@+id/toolBarOrderDetail">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity='center_horizontal'
+            android:textSize="17sp"
+            android:textColor="@color/colorWhite"
+            android:text="@string/order_detail"/>
+
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"
+        android:layout_below="@+id/toolBarOrderDetail">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/cardViewOrderNo"
+                app:cardElevation="7dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginStart="7dp"
+                        android:textSize="17sp"
+                        android:textColor="@color/black_button"
+                        android:text="@string/order_no"
+                        android:id="@+id/textOrderNoDetail"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignTop="@+id/textOrderNoDetail"
+                        android:textColor="@color/black_button"
+                        android:text="@string/order_amount"
+                        android:layout_marginEnd="7dp"
+                        android:id="@+id/textOrderDetailAmount"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/textOrderNoDetail"
+                        android:layout_toStartOf="@+id/textOrderDetailAmount"
+                        android:layout_marginEnd="2.5dp"
+                        android:textColor="@color/black_button"
+                        android:text="$"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textOrderNoDetail"
+                        android:layout_alignStart="@+id/textOrderNoDetail"
+                        android:textColor="@color/colorText"
+                        android:textSize="17sp"
+                        android:text="@string/order_confirmed"
+                        android:id="@+id/textOrderConfirmDetail"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textOrderConfirmDetail"
+                        android:layout_alignStart="@+id/textOrderNoDetail"
+                        android:textSize="10sp"
+                        android:text="Time: 11:35 AM, 15 June 2017"
+                        tools:ignore="SmallSp" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cardViewOrderNo"
+                android:layout_marginTop="7dp"
+                app:cardElevation="7dp"
+                android:id="@+id/cardViewOrderDetailsTwo">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginStart="7dp"
+                        android:textColor="@color/black_button"
+                        android:text="@string/address"
+                        android:textSize="17sp"
+                        android:id="@+id/textPickUpAddress"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textPickUpAddress"
+                        android:layout_alignStart="@+id/textPickUpAddress"
+                        android:text="Home - #2214, Phase IV, Mohali, Punjab,India, 160059"
+                        android:textSize="10sp"
+                        tools:ignore="SmallSp"
+                        android:id="@+id/textOrderAddressDetails"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/bgForgot"
+                        android:layout_below="@+id/textOrderAddressDetails"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:id="@+id/viewOrderDetailsAddress"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/viewOrderDetailsAddress"
+                        android:layout_alignStart="@+id/textOrderAddressDetails"
+                        android:textColor="@color/black_button"
+                        android:text="@string/date_time"
+                        android:textSize="17sp"
+                        android:id="@+id/textOrderDetailsDateTime"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textOrderDetailsDateTime"
+                        android:layout_alignStart="@+id/textOrderAddressDetails"
+                        android:textSize="10sp"
+                        android:layout_marginBottom="5dp"
+                        tools:ignore="SmallSp"
+                        android:id="@+id/textOrderDateTimeDetails"
+                        android:text="Monday, 10 Nov 2017 between 10:00 PM - 02:00 PM"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/bgForgot"
+                        android:layout_below="@+id/textOrderDateTimeDetails"
+                        android:layout_marginBottom="5dp"
+                        android:id="@+id/viewOrderDateTimeDetails"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textOrderDateTimeDetails"
+                        android:layout_alignStart="@+id/textOrderAddressDetails"
+                        android:layout_marginTop="5dp"
+                        android:textSize="17sp"
+                        android:textColor="@color/black_button"
+                        android:text="@string/delivery_date_time"
+                        android:id="@+id/textDeliveryDateTimeDetails"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textDeliveryDateTimeDetails"
+                        android:layout_alignStart="@id/textOrderAddressDetails"
+                        android:textSize="10sp"
+                        android:text="Wednesday, 12 Nov 2017 between 12:00 PM - 02:00 PM"
+                        tools:ignore="SmallSp"
+                        android:layout_marginBottom="10dp"/>
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cardViewOrderDetailsTwo"
+                app:cardElevation="7dp"
+                android:layout_marginTop="7dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black_button"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="7dp"
+                    android:text="@string/wash_up_fold"
+                    android:textSize="17sp"
+                    android:id="@+id/textWashUpFoldDetails"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorBlack"
+                        android:layout_below="@+id/textWashUpFoldDetails"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:id="@+id/viewWashFoldDetails"
+                        android:layout_marginTop="7dp"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/viewWashFoldDetails"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:visibility="gone"
+                        android:id="@+id/relativeLayoutWashFold">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="7dp"
+                            android:id="@+id/textDetailsTShirtCount"
+                            android:textColor="@color/black_button"
+                            android:text="2"
+                            android:textSize="15sp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@+id/textDetailsTShirtCount"
+                            android:layout_toEndOf="@+id/textDetailsTShirtCount"
+                            android:layout_marginStart="3dp"
+                            android:text="* T-Shirt - (Men)"
+                            android:textSize="15sp"
+                            android:textColor="@color/black_button"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignTop="@+id/textDetailsTShirtCount"
+                            android:layout_marginEnd="10dp"
+                            android:textColor="@color/black_button"
+                            android:id="@+id/textDetailsAmountTShirt"
+                            android:textSize="15sp"
+                            android:text="10.00"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toStartOf="@+id/textDetailsAmountTShirt"
+                            android:layout_marginEnd="3dp"
+                            android:textColor="@color/black_button"
+                            android:textSize="15sp"
+                            android:text="$"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="7dp"
+                            android:id="@+id/textDetailsTrouserCount"
+                            android:layout_below="@+id/textDetailsShirtCount"
+                            android:textColor="@color/black_button"
+                            android:layout_marginTop="5dp"
+                            android:text="5"
+                            android:textSize="15sp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@+id/textDetailsTrouserCount"
+                            android:layout_toEndOf="@+id/textDetailsTrouserCount"
+                            android:layout_marginStart="3dp"
+                            android:text="* Shirt - (Trouser)"
+                            android:textSize="15sp"
+                            android:textColor="@color/black_button"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignTop="@+id/textDetailsTrouserCount"
+                            android:layout_marginEnd="10dp"
+                            android:textColor="@color/black_button"
+                            android:id="@+id/textDetailsTrouserAmount"
+                            android:textSize="15sp"
+                            android:text="10.00"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="3dp"
+                            android:layout_alignTop="@id/textDetailsTrouserCount"
+                            android:layout_toStartOf="@+id/textDetailsTrouserAmount"
+                            android:textColor="@color/black_button"
+                            android:textSize="15sp"
+                            android:text="$"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="7dp"
+                            android:id="@+id/textDetailsShirtCount"
+                            android:layout_below="@+id/textDetailsTShirtCount"
+                            android:textColor="@color/black_button"
+                            android:layout_marginTop="5dp"
+                            android:text="8"
+                            android:textSize="15sp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@+id/textDetailsShirtCount"
+                            android:layout_toEndOf="@+id/textDetailsShirtCount"
+                            android:layout_marginStart="3dp"
+                            android:text="* Shirt - (Men)"
+                            android:textSize="15sp"
+                            android:textColor="@color/black_button"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignTop="@+id/textDetailsShirtCount"
+                            android:layout_marginEnd="10dp"
+                            android:textColor="@color/black_button"
+                            android:id="@+id/textDetailsShirtAmount"
+                            android:textSize="15sp"
+                            android:text="10.00"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="3dp"
+                            android:layout_alignTop="@id/textDetailsShirtCount"
+                            android:layout_toStartOf="@+id/textDetailsShirtAmount"
+                            android:textColor="@color/black_button"
+                            android:textSize="15sp"
+                            android:text="$"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="7dp"
+                            android:id="@+id/textDetailsJeansCount"
+                            android:layout_below="@+id/textDetailsTrouserCount"
+                            android:textColor="@color/black_button"
+                            android:layout_marginTop="5dp"
+                            android:text="1"
+                            android:textSize="15sp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@+id/textDetailsJeansCount"
+                            android:layout_toEndOf="@+id/textDetailsJeansCount"
+                            android:layout_marginStart="3dp"
+                            android:text="* Jeans - (Men)"
+                            android:textSize="15sp"
+                            android:textColor="@color/black_button"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignTop="@+id/textDetailsJeansCount"
+                            android:layout_marginEnd="10dp"
+                            android:textColor="@color/black_button"
+                            android:id="@+id/textDetailsJeansAmount"
+                            android:textSize="15sp"
+                            android:text="10.00"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="3dp"
+                            android:layout_alignTop="@id/textDetailsJeansCount"
+                            android:layout_toStartOf="@+id/textDetailsJeansAmount"
+                            android:textColor="@color/black_button"
+                            android:textSize="15sp"
+                            android:layout_marginBottom="7dp"
+                            android:text="$"/>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/bgForgot"
+                            android:layout_marginStart="5dp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginEnd="5dp"
+                            android:id="@+id/viewWashIronDetails" />
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black_button"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginStart="7dp"
+                        android:text="@string/wash_iron"
+                        android:layout_below="@+id/relativeLayoutWashFold"
+                        android:textSize="17sp"
+                        android:id="@+id/textWashUpIronDetails"/>
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

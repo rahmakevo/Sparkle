@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="23dp">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/tool_bar_background"
+        android:id="@+id/toolbarNav">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/menu"
+            android:layout_gravity="center"
+            android:textSize="20sp"
+            android:textColor="@color/colorWhite"/>
+
+    </android.support.v7.widget.Toolbar>
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_home"
+        android:layout_below="@+id/toolbarNav"
+        android:contentDescription="@string/app_name"
+        android:background="@drawable/circle_image_view"
+        android:layout_marginStart="20dp"
+        android:id="@+id/imageViewHome"/>
+
+    <TextView
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageViewHome"
+        android:gravity="center"
+        android:textColor="@color/colorWhite"
+        android:layout_alignStart="@+id/imageViewHome"
+        android:layout_marginTop="7dp"
+        android:text="@string/home"
+        android:textStyle="bold"
+        android:id="@+id/textHome"/>
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/toolbarNav"
+        android:background="@drawable/circle_image_view2"
+        android:src="@drawable/ic_notify"
+        android:contentDescription="@string/app_name"
+        android:id="@+id/imageViewNotify"/>
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageViewNotify"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="7dp"
+        android:layout_alignEnd="@+id/imageViewNotify"
+        android:layout_marginEnd="-33dp"
+        android:textColor="@color/colorWhite"
+        android:textStyle="bold"
+        android:text="@string/notify"
+        android:id="@+id/textNotify"/>
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/toolbarNav"
+        android:background="@drawable/circle_image_view2"
+        android:layout_marginEnd="20dp"
+        android:src="@drawable/ic_about"
+        android:contentDescription="@string/app_name"
+        android:id="@+id/imageViewAbout"/>
+
+    <TextView
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageViewAbout"
+        android:layout_alignParentEnd="true"
+        android:text="@string/about"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="18dp"
+        android:textColor="@color/colorWhite"
+        android:textStyle="bold"
+        android:id="@+id/textAbout"/>
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/textHome"
+        android:layout_alignStart="@+id/imageViewHome"
+        android:background="@drawable/circle_image_view2"
+        android:src="@drawable/ic_orders"
+        android:contentDescription="@string/app_name"
+        android:id="@+id/imageViewOrders"/>
+
+    <TextView
+        android:layout_width="67dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="13dp"
+        android:textColor="@color/colorWhite"
+        android:layout_below="@+id/imageViewOrders"
+        android:textStyle="bold"
+        android:text="@string/orders" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/textNotify"
+        android:background="@drawable/circle_image_view2"
+        android:src="@drawable/ic_share"
+        android:contentDescription="@string/app_name"
+        android:id="@+id/imageViewShare"/>
+
+    <TextView
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/imageViewShare"
+        android:textStyle="bold"
+        android:textColor="@color/colorWhite"
+        android:text="@string/refer"/>
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/textAbout"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/circle_image_view2"
+        android:src="@drawable/ic_wallet"
+        android:contentDescription="@string/app_name"
+        android:id="@+id/imageViewWallet"/>
+
+    <TextView
+        android:layout_width="46dp"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_below="@+id/imageViewWallet"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="20dp"
+        android:textColor="@color/colorWhite"
+        android:text="@string/wallet"/>
+
+
+</RelativeLayout>

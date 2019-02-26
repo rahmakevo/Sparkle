@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.PastOrders">
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+       <android.support.v7.widget.CardView
+           android:layout_width="match_parent"
+           android:layout_height="100dp"
+           android:layout_marginEnd="10dp"
+           android:layout_marginStart="10dp"
+           android:layout_marginTop="7dp"
+           android:id="@+id/cardViewOrdersOne">
+
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent">
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:textColor="@color/black_button"
+                   android:layout_margin="7dp"
+                   android:text="@string/order_no"
+                   android:id="@+id/textOrderNo"/>
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_alignParentEnd="true"
+                   android:layout_alignTop="@+id/textOrderNo"
+                   android:layout_marginEnd="12dp"
+                   android:textColor="@color/black_button"
+                   android:text="@string/order_amount"
+                   android:id="@+id/textOrderAmount"/>
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_toStartOf="@+id/textOrderAmount"
+                   android:layout_alignTop="@+id/textOrderNo"
+                   android:layout_marginEnd="5dp"
+                   android:text="$"
+                   android:textColor="@color/black_button"/>
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_below="@+id/textOrderNo"
+                   android:layout_alignStart="@+id/textOrderNo"
+                   android:text="@string/order_cancelled"
+                   android:textColor="@color/colorText"
+                   android:layout_marginBottom="7dp"
+                   android:id="@+id/textOrderStatus"/>
+
+               <View
+                   android:layout_width="match_parent"
+                   android:layout_height="1dp"
+                   android:background="@color/bgForgot"
+                   android:layout_below="@+id/textOrderStatus"
+                   android:id="@+id/viewOrdersImage"/>
+
+               <Button
+                   android:layout_width="90dp"
+                   android:layout_height="25dp"
+                   android:layout_below="@+id/viewOrdersImage"
+                   android:layout_marginStart="7dp"
+                   android:layout_marginTop="10dp"
+                   android:layout_marginBottom="7dp"
+                   android:background="@drawable/orders_background_button"
+                   android:textColor="@color/black_button"
+                   android:text="@string/repeat_order"
+                   android:textSize="12sp"
+                   android:textAllCaps="false"/>
+
+               <Button
+                   android:layout_width="90dp"
+                   android:layout_height="25dp"
+                   android:layout_alignParentEnd="true"
+                   android:layout_below="@+id/viewOrdersImage"
+                   android:layout_marginTop="10dp"
+                   android:layout_marginBottom="7dp"
+                   android:layout_marginEnd="7dp"
+                   android:textColor="@color/black_button"
+                   android:textSize="12sp"
+                   android:textAllCaps="false"
+                   android:text="@string/view_details"
+                   android:background="@drawable/orders_background_button"/>
+
+           </RelativeLayout>
+
+       </android.support.v7.widget.CardView>
+
+   </RelativeLayout>
+
+</FrameLayout>

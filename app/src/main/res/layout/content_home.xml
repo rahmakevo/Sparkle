@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ui.HomeActivity"
+    tools:showIn="@layout/app_bar_home">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:src="@drawable/dry_clean_resized"
+        android:scaleType="fitXY"
+        android:contentDescription="@string/home"
+        android:id="@+id/imageViewHome"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageViewHome"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/colorText"
+        android:text="@string/services"
+        android:textStyle="bold"
+        android:id="@+id/textViewHome"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/textViewHome"
+        android:scrollbars="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/cardViewOne"
+                android:layout_marginStart="7dp"
+                android:layout_marginEnd="7dp"
+                app:cardCornerRadius="7dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#d9f7ff">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="30dp"
+                        android:textColor="@color/black_button"
+                        android:text="@string/wash_fold"
+                        android:id="@+id/textViewWashFold"
+                        android:textSize="18sp"/>
+
+                    <TextView
+                        android:layout_width="70dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/background_button_home"
+                        android:layout_below="@+id/textViewWashFold"
+                        android:layout_alignStart="@+id/textViewWashFold"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginTop="3dp"
+                        android:textColor="@color/colorWhite"
+                        android:paddingStart="6dp"
+                        android:paddingEnd="3dp"
+                        android:text="@string/forty_eight_hours"
+                        android:layout_marginBottom="25dp"/>
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="80dp"
+                        android:layout_marginTop="7dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="35dp"
+                        android:src="@drawable/wash_and_fold"
+                        android:contentDescription="@string/app_name"/>
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cardViewOne"
+                android:layout_marginStart="7dp"
+                android:layout_marginEnd="7dp"
+                android:layout_marginTop="4dp"
+                app:cardCornerRadius="7dp"
+                android:id="@+id/cardViewTwo">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#ffffe7">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="30dp"
+                        android:textColor="@color/black_button"
+                        android:text="@string/wash_iron"
+                        android:id="@+id/textViewWashIron"
+                        android:textSize="18sp"/>
+
+                    <TextView
+                        android:layout_width="70dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/background_button_home"
+                        android:layout_below="@+id/textViewWashIron"
+                        android:layout_alignStart="@+id/textViewWashIron"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginTop="3dp"
+                        android:textColor="@color/colorWhite"
+                        android:paddingStart="6dp"
+                        android:paddingEnd="3dp"
+                        android:text="@string/forty_eight_hours"
+                        android:layout_marginBottom="25dp"/>
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="80dp"
+                        android:layout_marginTop="7dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="35dp"
+                        android:src="@drawable/wash_and_iron"
+                        android:contentDescription="@string/app_name"/>
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cardViewTwo"
+                android:layout_marginStart="7dp"
+                android:layout_marginEnd="7dp"
+                android:layout_marginTop="4dp"
+                app:cardCornerRadius="7dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#fdeafe">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="30dp"
+                        android:textColor="@color/black_button"
+                        android:text="@string/dry_clean"
+                        android:id="@+id/textViewWashDryClean"
+                        android:textSize="18sp"/>
+
+                    <TextView
+                        android:layout_width="70dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/background_button_home"
+                        android:layout_below="@+id/textViewWashDryClean"
+                        android:layout_alignStart="@+id/textViewWashDryClean"
+                        android:layout_marginStart="3dp"
+                        android:layout_marginTop="3dp"
+                        android:textColor="@color/colorWhite"
+                        android:paddingStart="6dp"
+                        android:paddingEnd="3dp"
+                        android:text="@string/forty_eight_hours"
+                        android:layout_marginBottom="25dp"/>
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="80dp"
+                        android:layout_marginTop="7dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="35dp"
+                        android:src="@drawable/dry_clean"
+                        android:contentDescription="@string/app_name"/>
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

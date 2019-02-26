@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".auth.RegisterOneActivity"
+    android:background="@color/bgForgot">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolBarRegisterOne"
+        android:background="@drawable/tool_bar_background">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/arrow_left"
+            android:contentDescription="@string/app_name"
+            android:id="@+id/registerOneBack"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/colorWhite"
+            android:textSize="17sp"
+            android:text="@string/sign_up"/>
+
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolBarRegisterOne"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:textColor="@color/colorBlack"
+        android:text="@string/welcome"
+        android:id="@+id/textRegWelcome"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:layout_below="@+id/textRegWelcome"
+        android:background="@drawable/background_edit_text2"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="60dp"
+        android:inputType="textPersonName"
+        android:hint="@string/first_name"
+        android:paddingStart="7dp"
+        android:paddingEnd="7dp"
+        android:textColorHint="@color/black_button"
+        tools:ignore="RtlSymmetry"
+        android:id="@+id/editTextFirstName"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:layout_alignStart="@+id/editTextFirstName"
+        android:layout_alignEnd="@+id/editTextFirstName"
+        android:layout_below="@+id/editTextFirstName"
+        android:background="@drawable/background_edit_text2"
+        android:layout_marginTop="10dp"
+        android:inputType="textPersonName"
+        android:paddingStart="7dp"
+        android:textColorHint="@color/black_button"
+        android:paddingEnd="7dp"
+        tools:ignore="RtlSymmetry"
+        android:hint="@string/last_name"
+        android:id="@+id/editTextLastName"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:layout_below="@+id/editTextLastName"
+        android:layout_alignEnd="@+id/editTextFirstName"
+        android:layout_alignStart="@+id/editTextFirstName"
+        android:layout_marginTop="10dp"
+        android:paddingStart="7dp"
+        android:paddingEnd="7dp"
+        android:textColorHint="@color/black_button"
+        android:background="@drawable/background_edit_text2"
+        tools:ignore="RtlSymmetry"
+        android:hint="@string/surname"
+        android:inputType="textPersonName"
+        android:id="@+id/editTextSurName"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:layout_below="@+id/editTextSurName"
+        android:layout_alignStart="@+id/editTextFirstName"
+        android:layout_alignEnd="@+id/editTextFirstName"
+        android:layout_marginTop="10dp"
+        android:paddingStart="7dp"
+        android:paddingEnd="7dp"
+        android:textColorHint="@color/black_button"
+        tools:ignore="RtlSymmetry"
+        android:background="@drawable/background_edit_text2"
+        android:hint="@string/reg_number"
+        android:inputType="number"
+        android:id="@+id/editTextRegNumber"/>
+    
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/bgForgot"
+        android:text="@string/next"
+        android:gravity="center|end"
+        android:paddingEnd="15dp"
+        android:paddingStart="15dp"
+        android:textAllCaps="false"
+        tools:ignore="RtlSymmetry"
+        android:id="@+id/btnRegisterNext"/>
+
+
+</RelativeLayout>

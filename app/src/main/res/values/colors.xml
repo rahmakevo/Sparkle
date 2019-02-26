@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#23afe5</color>
+    <color name="colorPrimaryDark">#1681b3</color>
+    <color name="colorAccent">#33FFFFFF</color>
+
+    <color name="splash_bg">#23afe5</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorText">#09597a</color>
+    <color name="bgForgot">#f1f1f1</color>
+
+    <color name="black_button">#2c2c2c</color>
+    <color name="circleBg">#075979</color>
+    <color name="colorTextTwo">#075979</color>
+</resources>

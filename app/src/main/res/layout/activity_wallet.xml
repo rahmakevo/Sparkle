@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.WalletActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/tool_bar_background"
+        android:id="@+id/toolBarWallet">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textSize="17sp"
+            android:textColor="@color/colorWhite"
+            android:text="@string/walet"/>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/arrow_left"
+            android:contentDescription="@string/walet"
+            android:id="@+id/backButtonWallet"/>
+
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolBarWallet"
+        android:background="#4bbde9"
+        android:id="@+id/relativeLayoutBal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="@string/available_balance"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/colorWhite"
+            android:id="@+id/textWalletBalance"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textWalletBalance"
+            android:gravity="center_horizontal"
+            android:text="@string/bal_amount"
+            android:textSize="40sp"
+            android:textColor="@color/colorWhite"
+            android:id="@+id/textWalletAmount"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayoutBal"
+        android:background="#2c2c2c"
+        android:orientation="horizontal"
+        android:id="@+id/linearLayoutWallet">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="@string/trans"
+            android:textColor="@color/colorWhite"
+            android:textAllCaps="true"
+            android:paddingTop="7dp"
+            android:paddingBottom="5dp"
+            android:id="@+id/textWalletTransactions"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="@string/inquire"
+            android:textColor="@color/colorWhite"
+            android:textAllCaps="true"
+            android:paddingTop="7dp"
+            android:paddingBottom="5dp"
+            android:id="@+id/textWalletInquiry"/>
+
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayoutWallet"
+        android:id="@+id/viewPagerWallet">
+
+    </android.support.v4.view.ViewPager>
+
+</RelativeLayout>

@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.LoadWalletActivity"
+    android:background="@color/bgForgot">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:background="#09a8d0"
+        android:layout_marginTop="180dp"
+        android:id="@+id/viewWallet"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/tool_bar_background"
+        android:alpha="0.9">
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/toolBarLoadWallet">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/arrow_left"
+                android:contentDescription="@string/app_name"
+                android:id="@+id/walletTwoBack"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/colorWhite"
+                android:textSize="17sp"
+                android:text="@string/load_wallet"/>
+
+        </android.support.v7.widget.Toolbar>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_below="@+id/toolBarLoadWallet">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@drawable/tool_bar_background">
+
+                <ImageView
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/circle_image_view_three"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/wallet_outer_image"/>
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="11dp"
+                    android:background="@drawable/circle_image_view2"
+                    android:src="@drawable/ic_wallet"
+                    android:contentDescription="@string/app_name"/>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="118dp"
+                    android:layout_marginStart="22dp"
+                    android:layout_marginEnd="22dp"
+                    android:background="@drawable/rectangle_wallet_background"
+                    android:id="@+id/btnWalletBackground"/>
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_below="@+id/viewWallet"
+        android:id="@+id/cardViewWallet">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/bgForgot">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textSize="9sp"
+                android:textColor="@color/colorTextTwo"
+                android:layout_marginTop="7dp"
+                android:textAllCaps="true"
+                android:text="@string/available_balance"
+                android:id="@+id/textAvailableBalance"
+                tools:ignore="SmallSp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorWhite"
+                android:layout_below="@+id/textAvailableBalance"
+                android:layout_marginTop="7dp"
+                android:id="@+id/viewAvailableBalance"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/viewAvailableBalance"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:text="@string/balance_amount"
+                android:textSize="21sp"
+                android:textColor="@color/colorText"
+                android:textStyle="bold"/>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_below="@+id/cardViewWallet"
+        android:id="@+id/cardViewWalletTwo">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:hint="@string/_254724355185"
+                android:inputType="number"
+                android:gravity="center"
+                android:id="@+id/editTextNumber"
+                android:layout_marginBottom="5dp"/>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="60dp"
+                android:layout_height="18dp"
+                android:layout_marginStart="30dp"
+                app:cardCornerRadius="6dp"
+                android:layout_below="@+id/editTextNumber"
+                android:id="@+id/cardViewSafaricom">
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="18dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_below="@+id/editTextNumber"
+                    android:paddingStart="2dp"
+                    android:paddingEnd="2dp"
+                    android:paddingBottom="1dp"
+                    android:src="@drawable/safaricom_logo"
+                    android:contentDescription="@string/app_name"
+                    android:id="@+id/imageSafaricomProvider"/>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="60dp"
+                android:layout_height="18dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/editTextNumber"
+                app:cardCornerRadius="6dp"
+                app:cardBackgroundColor="@color/colorTextTwo"
+                android:id="@+id/cardViewTelecom">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="18dp"
+                    android:layout_below="@+id/editTextNumber"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginStart="5dp"
+                    android:paddingStart="2dp"
+                    android:paddingEnd="2dp"
+                    android:paddingBottom="3dp"
+                    android:src="@drawable/telecom_logo"
+                    android:contentDescription="@string/app_name" />
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="60dp"
+                android:layout_height="18dp"
+                android:layout_marginEnd="30dp"
+                android:layout_alignParentEnd="true"
+                app:cardCornerRadius="6dp"
+                android:layout_below="@+id/editTextNumber"
+                android:id="@+id/cardViewAirtel">
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="18dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_below="@+id/editTextNumber"
+                    android:src="@drawable/airtel_logo"
+                    android:paddingStart="2dp"
+                    android:paddingEnd="2dp"
+                    android:paddingBottom="1.5dp"
+                    android:paddingTop="1dp"
+                    android:contentDescription="@string/app_name"
+                    android:id="@+id/imageAirtelProvider"/>
+            </android.support.v7.widget.CardView>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:background="@drawable/circle_image_view"
+                android:layout_alignStart="@+id/cardViewSafaricom"
+                android:layout_below="@+id/cardViewSafaricom"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="30dp"
+                android:id="@+id/imageViewSafaricom"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:background="@drawable/circle_image_four"
+                android:layout_below="@+id/cardViewTelecom"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:id="@+id/imageViewTelecom"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:background="@drawable/circle_image_four"
+                android:layout_below="@+id/cardViewAirtel"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="48dp"
+                android:layout_marginTop="5dp"
+                android:id="@+id/imageViewAirtel"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageViewTelecom"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:hint="@string/enter_amount"
+                android:gravity="center"
+                android:inputType="number"
+                android:id="@+id/editTextAmount"/>
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/cardViewWallet"
+        android:layout_marginTop="140dp"
+        android:background="@drawable/background_button2"
+        android:layout_marginStart="85dp"
+        android:text="@string/load"
+        android:textColor="@color/colorWhite"
+        android:layout_marginEnd="85dp"
+        android:id="@+id/btnLoadNumber"/>
+
+</RelativeLayout>

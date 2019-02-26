@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginStart="7dp"
+        android:src="@drawable/ic_in_process"
+        android:contentDescription="@string/app_name"
+        android:id="@+id/imageNotificationSingle"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageNotificationSingle"
+        android:layout_marginStart="7dp"
+        android:layout_toEndOf="@+id/imageNotificationSingle"
+        android:text="Successfully Delivered"
+        android:textColor="@color/black_button"
+        android:id="@+id/textNotificationTitle"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/imageNotificationSingle"
+        android:layout_below="@+id/textNotificationTitle"
+        android:layout_marginStart="7dp"
+        android:layout_marginEnd="15dp"
+        android:id="@+id/textNotificationStatus"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageNotificationSingle"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="5dp"
+        android:textSize="10sp"
+        tools:ignore="SmallSp"
+        android:text="09 Nov"
+        android:id="@+id/textNotificationDate"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/bgForgot"
+        android:layout_below="@+id/textNotificationStatus"
+        android:layout_marginTop="10dp"/>
+
+</RelativeLayout>

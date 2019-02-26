@@ -1,0 +1,194 @@
+<resources>
+    <string name="app_name">Sparkle</string>
+
+    <string name="choose_clothes">Choose Your Clothes</string>
+    <string name="collect">We collect your dirty clothes from Your Doorstep</string>
+    <string name="start">Get Started</string>
+    <string name="next">Next</string>
+    <string name="pick_up">Schedule Pickup</string>
+    <string name="collected">Tell us when you need your order collected</string>
+    <string name="facilities">Get top Washing Facilities</string>
+    <string name="clean">Nice clean washing every time</string>
+    <string name="delivery">Get on-Time Delivery</string>
+    <string name="request">Delivery within 72 hours and express delivery on request</string>
+    <string name="order_now">Start Ordering Now</string>
+
+    <string name="number">Phone Number</string>
+    <string name="password">Password</string>
+    <string name="forgot"><u>Forgot your Password?</u></string>
+    <string name="sign">Sign in</string>
+    <string name="register">Don\'t have an Account?<u> Sign up</u></string>
+
+    <string name="need_forgot">Need help with your password?</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="send">Send</string>
+    <string name="have_account">Already have an account?</string>
+    <string name="sign_in">Sign in</string>
+
+    <string name="sign_up">Sign Up</string>
+    <string name="welcome">Welcome User Please fill the detail below</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="surname">Surname</string>
+    <string name="reg_number">Mobile Number +254</string>
+
+    <string name="email">E-mail Address</string>
+    <string name="your_password">Your Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="cancel">Cancel</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Log Out</string>
+
+    <string name="home">Home</string>
+    <string name="menu">Menu</string>
+    <string name="notify">Notifications</string>
+    <string name="about">About Us</string>
+    <string name="orders">All Orders</string>
+    <string name="refer">Refer &amp; Earn</string>
+    <string name="wallet">Wallet</string>
+
+    <string name="services">SERVICES</string>
+    <string name="wash_fold">Wash &amp; Fold</string>
+    <string name="forty_eight_hours">48 Hours</string>
+    <string name="wash_iron">Wash &amp; Iron</string>
+    <string name="dry_clean">Dry Clean</string>
+
+    <string name="men">Men\'s</string>
+    <string name="women">Women\'s</string>
+    <string name="bedding">Bedding</string>
+    <string name="household">Household</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="t_shirt">T-Shirt</string>
+    <string name="currency">$</string>
+    <string name="shirt">Shirt</string>
+    <string name="trouser">Trouser</string>
+    <string name="jeans">Jeans</string>
+    <string name="blazer">Blazer</string>
+    <string name="jacket">Jacket</string>
+
+    <string name="king">King/Queen Bed Sheet</string>
+    <string name="single">Single Bed Sheet</string>
+    <string name="double_sheet">Double Bed Sheet</string>
+    <string name="pillow">Pillow Case</string>
+    <string name="pillows">Pillow</string>
+    <string name="duvet">Single Duvet</string>
+
+    <string name="hand_towel">Hand Towel</string>
+    <string name="bath_towel">Bath Towel</string>
+    <string name="bath_mat">Bath Mat</string>
+    <string name="apron">Apron</string>
+    <string name="carpet_one">80 * 150 Carpet</string>
+    <string name="carpet_two">160 * 230 Carpet</string>
+
+    <string name="all_orders">All Orders</string>
+    <string name="ongoing_orders">Ongoing Orders</string>
+    <string name="past_orders">Past Orders</string>
+
+    <string name="order_no">Order No - 110040717</string>
+    <string name="order_amount">474</string>
+    <string name="order_confirmed">Order Confirmed - Ready to pickup</string>
+
+    <string name="confirm">Confirmed</string>
+    <string name="pick">Picked up</string>
+    <string name="process">In process</string>
+    <string name="shipped">Shipped</string>
+    <string name="delivered">Delivered</string>
+    <string name="cancel_order">Cancel Order</string>
+    <string name="view_details">View Details</string>
+    <string name="order_cancelled">Order Cancelled</string>
+    <string name="repeat_order">Repeat Order</string>
+
+    <string name="order_detail">Order details</string>
+    <string name="address">Pickup Address</string>
+    <string name="date_time">Pickup Date &amp; Time</string>
+    <string name="delivery_date_time">Delivery Date &amp; Time</string>
+    <string name="wash_up_fold">Washup &amp; Fold</string>
+
+    <string name="refer_earn">Refer &amp; Earn a Free Wash</string>
+    <string name="refer_status">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et mauris eu massa congue efficitur id eget urna.</string>
+    <string name="refer_code">ABC12345</string>
+
+    <string name="about_title">Wash It Laundry Service</string>
+    <string name="about_status">Ground Floor, National Bank Building, Aga Khan Walk, Nairobi</string>
+    <string name="services_about">Services</string>
+    <string name="about_us">About</string>
+    <string name="reviews_about">Reviews</string>
+
+    <string name="wash_up_iron">Washup &amp; Iron</string>
+    <string name="dry_cleaning">Dry Cleaning</string>
+
+    <string name="mon_fri">Mon to Fri : 08:00 AM - 08:00 PM</string>
+    <string name="sat">Saturday : 08:00 AM - 08:00 PM</string>
+    <string name="sun">Sunday : Closed</string>
+    <string name="desc">Description :</string>
+    <string name="description"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ultricies, dolor at convallis pulvinar, arcu augue ultricies justo, sed dignissim nisi urna non dolor. Suspendisse.</string>
+
+    <string name="your_basket">Your Basket</string>
+    <string name="items">0 Items Added</string>
+    <string name="done">Done</string>
+    <string name="price">Total Price</string>
+    <string name="unit_price">Unit Price</string>
+    <string name="schedule_pick_up">Schedule pickup</string>
+    <string name="total_price">Total Price</string>
+
+    <string name="location">Location</string>
+    <string name="date">Date/Time</string>
+    <string name="payment">Payment</string>
+    <string name="complete">Complete</string>
+    <string name="continue_date_time">Continue to Date/Time</string>
+    <string name="continue_payment">Continue to Payment Method</string>
+    <string name="confirm_order">Confirm Order</string>
+
+    <string name="pay_wallet">Pay Via Wallet</string>
+    <string name="pay_visa">Visa Debit Card</string>
+    <string name="pay_cash">Cash On Delivery</string>
+    <string name="load_wallet">Load Wallet</string>
+
+    <string name="available_balance">Available Balance</string>
+    <string name="balance_amount">KES 500.oo</string>
+    <string name="choose_provider">Choose your provider</string>
+    <string name="enter_amount">Enter Amount</string>
+    <string name="load">Load</string>
+    <string name="_254724355185">+254724355185</string>
+    <string name="thank_you_for_choosing_us">Thank You For Choosing Us!</string>
+    <string name="your_pickup_has_been_confirmed">Your pickup has been confirmed.</string>
+    <string name="order_id">Order Id</string>
+    <string name="_2017121085">2017121085</string>
+    <string name="final_amount">Final Amount</string>
+    <string name="pickup_date_amp_time"><![CDATA[Pickup Date & Time]]></string>
+    <string name="monday_10_nov_2017_at_10_00_am_02_00pm">Monday, 10 Nov 2017 at 10:00 AM - 02:00PM</string>
+    <string name="go_to_order_status">Go to Order Status</string>
+
+    <string name="pickup_date">Pickup Date</string>
+    <string name="get_date">Get Date</string>
+    <string name="pick_up_time">Pickup Time Slot</string>
+    <string name="get_time">Get Time</string>
+    <string name="delivery_date">Delivery Date</string>
+    <string name="delivery_time">Delivery Time Slot</string>
+
+    <string name="walet">Wallet</string>
+    <string name="bal_amount">KES 7500</string>
+    <string name="trans">Transactions</string>
+    <string name="inquire">Inquiries</string>
+
+    <string name="full_stat">Full Statement</string>
+    <string name="mini_stat">Mini Statement</string>
+
+    <string name="black_trouser">Black Trouser - 2 pairs</string>
+    <string name="rejected">Rejected</string>
+    <string name="reject_amount">KES - 850</string>
+    <string name="reject_date">25.04.2017,09:30 PM</string>
+
+    <string name="profile">Profile</string>
+    <string name="username">Username</string>
+
+    <string name="maps_api_key">AIzaSyDwQNf7aTEs1U3t4pVJp9gSd8rqvrDy3PI</string>
+</resources>

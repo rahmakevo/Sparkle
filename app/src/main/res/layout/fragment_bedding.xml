@@ -1,0 +1,509 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.BeddingFragment">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorWhite"
+        android:id="@+id/viewBeddingMen"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"
+        android:layout_below="@+id/viewBeddingMen">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/relativeLayoutBeddingOne">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="7dp"
+                    android:src="@drawable/beddings_kings_sheet"
+                    android:contentDescription="@string/app_name"
+                    android:id="@+id/imageBeddingKingSheet"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/imageBeddingKingSheet"
+                    android:layout_alignTop="@+id/imageBeddingKingSheet"
+                    android:textColor="@color/black_button"
+                    android:text="@string/king"
+                    android:id="@+id/textBeddingKingSheet"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/imageBeddingKingSheet"
+                    android:layout_toEndOf="@+id/imageBeddingKingSheet"
+                    android:id="@+id/textCurrency"
+                    android:textColor="@color/colorText"
+                    android:text="@string/currency"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/textCurrency"
+                    android:layout_alignBottom="@+id/imageBeddingKingSheet"
+                    android:layout_marginStart="2dp"
+                    android:text="1"
+                    android:textColor="@color/colorText"/>
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_below="@+id/textBeddingKingSheet"
+                    android:layout_marginEnd="7dp"
+                    android:src="@drawable/ic_plus_circle_outline"
+                    android:contentDescription="@string/app_name"
+                    android:id="@+id/circleImagePlusBeddingKingSheet"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toStartOf="@+id/circleImagePlusBeddingKingSheet"
+                    android:layout_below="@+id/textBeddingKingSheet"
+                    android:layout_marginEnd="3dp"
+                    android:textColor="@color/black_button"
+                    android:text="0"
+                    android:id="@+id/textNumberBeddingKingSheet"/>
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="20dp"
+                    android:layout_toStartOf="@+id/textNumberBeddingKingSheet"
+                    android:layout_below="@+id/textBeddingKingSheet"
+                    android:layout_marginEnd="3dp"
+                    android:src="@drawable/ic_minus_circle_outline"
+                    android:contentDescription="@string/app_name"
+                    android:id="@+id/circleImageMinusMen"/>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorWhite"
+                android:layout_below="@+id/relativeLayoutBeddingOne"
+                android:id="@+id/viewMenTShirt"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/relativeLayoutMenTwo"
+                android:layout_below="@+id/viewMenTShirt">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="7dp"
+                    android:src="@drawable/beddings_single_sheet"
+                    android:contentDescription="@string/app_name"
+                    android:id="@+id/imageMenShirt"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/imageMenShirt"
+                    android:layout_alignTop="@+id/imageMenShirt"
+                    android:textColor="@color/black_button"
+                    android:text="@string/single"
+                    android:id="@+id/textMenShirt"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/imageMenShirt"
+                    android:layout_toEndOf="@+id/imageMenShirt"
+                    android:id="@+id/textCurrencyShirt"
+                    android:textColor="@color/colorText"
+                    android:text="@string/currency"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/textCurrencyShirt"
+                    android:layout_alignBottom="@+id/imageMenShirt"
+                    android:layout_marginStart="2dp"
+                    android:text="1"
+                    android:textColor="@color/colorText"/>
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_below="@+id/textMenShirt"
+                    android:layout_marginEnd="7dp"
+                    android:src="@drawable/ic_plus_circle_outline"
+                    android:contentDescription="@string/app_name"
+                    android:id="@+id/circleImagePlusMenShirt"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toStartOf="@+id/circleImagePlusMenShirt"
+                    android:layout_below="@+id/textMenShirt"
+                    android:layout_marginEnd="3dp"
+                    android:textColor="@color/black_button"
+                    android:text="0"
+                    android:id="@+id/textNumberMenShirt"/>
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="20dp"
+                    android:layout_toStartOf="@+id/textNumberMenShirt"
+                    android:layout_below="@+id/textMenShirt"
+                    android:layout_marginEnd="3dp"
+                    android:src="@drawable/ic_minus_circle_outline"
+                    android:contentDescription="@string/app_name"
+                    android:id="@+id/circleImageMinusMenShirt"/>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorWhite"
+                android:layout_below="@+id/relativeLayoutMenTwo"
+                android:id="@+id/viewMenShirt"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/relativeLayoutMenThree"
+                android:layout_below="@+id/viewMenShirt">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="7dp"
+                    android:src="@drawable/beddings_double_sheet"
+                    android:contentDescription="@string/app_name"
+                    android:id="@+id/imageMenTrouser"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/imageMenTrouser"
+                    android:layout_alignTop="@+id/imageMenTrouser"
+                    android:textColor="@color/black_button"
+                    android:text="@string/double_sheet"
+                    android:id="@+id/textMenTrouser"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/imageMenTrouser"
+                    android:layout_toEndOf="@+id/imageMenTrouser"
+                    android:id="@+id/textCurrencyTrouser"
+                    android:textColor="@color/colorText"
+                    android:text="@string/currency"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/textCurrencyTrouser"
+                    android:layout_alignBottom="@+id/imageMenTrouser"
+                    android:layout_marginStart="2dp"
+                    android:text="1"
+                    android:textColor="@color/colorText"/>
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_below="@+id/textMenTrouser"
+                    android:layout_marginEnd="7dp"
+                    android:src="@drawable/ic_plus_circle_outline"
+                    android:contentDescription="@string/app_name"
+                    android:id="@+id/circleImagePlusMenTrouser"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toStartOf="@+id/circleImagePlusMenTrouser"
+                    android:layout_below="@+id/textMenTrouser"
+                    android:layout_marginEnd="3dp"
+                    android:textColor="@color/black_button"
+                    android:text="0"
+                    android:id="@+id/textNumberMenTrouser"/>
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="20dp"
+                    android:layout_toStartOf="@+id/textNumberMenTrouser"
+                    android:layout_below="@+id/textMenTrouser"
+                    android:layout_marginEnd="3dp"
+                    android:src="@drawable/ic_minus_circle_outline"
+                    android:contentDescription="@string/app_name"
+                    android:id="@+id/circleImageMinusMenTrouser"/>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorWhite"
+                android:layout_below="@+id/relativeLayoutMenThree"
+                android:id="@+id/viewMenTrouser"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/relativeLayoutMenFour"
+                android:layout_below="@+id/viewMenTrouser">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="7dp"
+                    android:src="@drawable/beddings_pillowcase"
+                    android:contentDescription="@string/app_name"
+                    android:id="@+id/imageMenJeans"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/imageMenJeans"
+                    android:layout_alignTop="@+id/imageMenJeans"
+                    android:textColor="@color/black_button"
+                    android:text="@string/pillow"
+                    android:id="@+id/textMenJeans"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/imageMenJeans"
+                    android:layout_toEndOf="@+id/imageMenJeans"
+                    android:id="@+id/textCurrencyJeans"
+                    android:textColor="@color/colorText"
+                    android:text="@string/currency"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/textCurrencyJeans"
+                    android:layout_alignBottom="@+id/imageMenJeans"
+                    android:layout_marginStart="2dp"
+                    android:text="1"
+                    android:textColor="@color/colorText"/>
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_below="@+id/textMenJeans"
+                    android:layout_marginEnd="7dp"
+                    android:src="@drawable/ic_plus_circle_outline"
+                    android:contentDescription="@string/app_name"
+                    android:id="@+id/circleImagePlusMenJeans"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toStartOf="@+id/circleImagePlusMenJeans"
+                    android:layout_below="@+id/textMenJeans"
+                    android:layout_marginEnd="3dp"
+                    android:textColor="@color/black_button"
+                    android:text="0"
+                    android:id="@+id/textNumberMenJeans"/>
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="20dp"
+                    android:layout_toStartOf="@+id/textNumberMenJeans"
+                    android:layout_below="@+id/textMenJeans"
+                    android:layout_marginEnd="3dp"
+                    android:src="@drawable/ic_minus_circle_outline"
+                    android:contentDescription="@string/app_name"
+                    android:id="@+id/circleImageMinusMenJeans"/>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorWhite"
+                android:layout_below="@+id/relativeLayoutMenFour"
+                android:id="@+id/viewMenJeans"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/relativeLayoutMenFive"
+                android:layout_below="@+id/viewMenJeans">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="7dp"
+                    android:src="@drawable/beddings_pillow"
+                    android:contentDescription="@string/app_name"
+                    android:id="@+id/imageMenBlazer"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/imageMenBlazer"
+                    android:layout_alignTop="@+id/imageMenBlazer"
+                    android:textColor="@color/black_button"
+                    android:text="@string/pillows"
+                    android:id="@+id/textMenBlazer"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/imageMenBlazer"
+                    android:layout_toEndOf="@+id/imageMenBlazer"
+                    android:id="@+id/textCurrencyBlazer"
+                    android:textColor="@color/colorText"
+                    android:text="@string/currency"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/textCurrencyBlazer"
+                    android:layout_alignBottom="@+id/imageMenBlazer"
+                    android:layout_marginStart="2dp"
+                    android:text="2"
+                    android:textColor="@color/colorText"/>
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_below="@+id/textMenBlazer"
+                    android:layout_marginEnd="7dp"
+                    android:src="@drawable/ic_plus_circle_outline"
+                    android:contentDescription="@string/app_name"
+                    android:id="@+id/circleImagePlusMenBlazer"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toStartOf="@+id/circleImagePlusMenBlazer"
+                    android:layout_below="@+id/textMenBlazer"
+                    android:layout_marginEnd="3dp"
+                    android:textColor="@color/black_button"
+                    android:text="0"
+                    android:id="@+id/textNumberMenBlazer"/>
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="20dp"
+                    android:layout_toStartOf="@+id/textNumberMenBlazer"
+                    android:layout_below="@+id/textMenBlazer"
+                    android:layout_marginEnd="3dp"
+                    android:src="@drawable/ic_minus_circle_outline"
+                    android:contentDescription="@string/app_name"
+                    android:id="@+id/circleImageMinusMenBlazer"/>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorWhite"
+                android:layout_below="@+id/relativeLayoutMenFive"
+                android:id="@+id/viewMenBlazer"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/relativeLayoutMenSix"
+                android:layout_below="@+id/viewMenBlazer">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="7dp"
+                    android:src="@drawable/beddings_duvet"
+                    android:contentDescription="@string/app_name"
+                    android:id="@+id/imageMenJacket"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/imageMenJacket"
+                    android:layout_alignTop="@+id/imageMenJacket"
+                    android:textColor="@color/black_button"
+                    android:text="@string/duvet"
+                    android:id="@+id/textMenJacket"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/imageMenJacket"
+                    android:layout_toEndOf="@+id/imageMenJacket"
+                    android:id="@+id/textCurrencyJacket"
+                    android:textColor="@color/colorText"
+                    android:text="@string/currency"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/textCurrencyJacket"
+                    android:layout_alignBottom="@+id/imageMenJacket"
+                    android:layout_marginStart="2dp"
+                    android:text="2"
+                    android:textColor="@color/colorText"/>
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_below="@+id/textMenJacket"
+                    android:layout_marginEnd="7dp"
+                    android:src="@drawable/ic_plus_circle_outline"
+                    android:contentDescription="@string/app_name"
+                    android:id="@+id/circleImagePlusMenJacket"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toStartOf="@+id/circleImagePlusMenJacket"
+                    android:layout_below="@+id/textMenJacket"
+                    android:layout_marginEnd="3dp"
+                    android:textColor="@color/black_button"
+                    android:text="0"
+                    android:id="@+id/textNumberMenJacket"/>
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="20dp"
+                    android:layout_toStartOf="@+id/textNumberMenJacket"
+                    android:layout_below="@+id/textMenJacket"
+                    android:layout_marginEnd="3dp"
+                    android:src="@drawable/ic_minus_circle_outline"
+                    android:contentDescription="@string/app_name"
+                    android:id="@+id/circleImageMinusMenJacket"/>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorWhite"
+                android:layout_below="@+id/relativeLayoutMenSix"
+                android:id="@+id/viewMenJacket"/>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

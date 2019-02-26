@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.Refer_Earn_Activity">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/tool_bar_background"
+        android:id="@+id/toolBarReferEarn">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/arrow_left"
+            android:contentDescription="@string/app_name"
+            android:id="@+id/referEarnBack"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textSize="17sp"
+            android:textColor="@color/colorWhite"
+            android:text="@string/refer"/>
+
+    </android.support.v7.widget.Toolbar>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@+id/toolBarReferEarn"
+        android:id="@+id/imageViewReferEarn"
+        android:src="@drawable/refer_earn" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageViewReferEarn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="7dp"
+        android:textColor="@color/black_button"
+        android:text="@string/refer_earn"
+        android:textStyle="bold"
+        android:textSize="19sp"
+        android:id="@+id/textReferEarnTitle"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textReferEarnTitle"
+        android:gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
+        android:text="@string/refer_status"
+        android:layout_marginStart="7dp"
+        android:layout_marginEnd="7dp"
+        android:id="@+id/textReferEarnStatus"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_below="@+id/textReferEarnStatus"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/background_button2"
+        android:backgroundTint="@color/bgForgot"
+        android:layout_marginTop="7dp"
+        android:text="@string/refer_code"
+        android:paddingEnd="5dp"
+        android:paddingStart="5dp"/>
+    
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/circle_image_view"
+        android:src="@drawable/ic_share_two"
+        android:id="@+id/imageViewRefer"/>
+
+</RelativeLayout>

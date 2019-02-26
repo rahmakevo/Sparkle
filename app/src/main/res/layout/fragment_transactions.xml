@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.TransactionsFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginStart="15dp"
+        android:textColor="@color/black_button"
+        android:text="@string/black_trouser"
+        android:id="@+id/rejectedBlackTrouser"/>
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignStart="@+id/rejectedBlackTrouser"
+        android:layout_below="@+id/rejectedBlackTrouser"
+        android:id="@+id/imageReject"
+        android:src="@drawable/ic_reject"
+        android:contentDescription="@string/app_name"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rejectedBlackTrouser"
+        android:layout_toEndOf="@+id/imageReject"
+        android:text="@string/rejected"
+        android:textColor="@color/black_button"
+        android:id="@+id/rejectedText"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/rejectedBlackTrouser"
+        android:layout_marginEnd="30dp"
+        android:id="@+id/rejectedTrouserAmount"
+        android:text="@string/reject_amount"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rejectedTrouserAmount"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="30dp"
+        android:text="@string/reject_date"
+        android:textSize="12sp"
+        android:id="@+id/rejectTrouserDate"/>
+
+</RelativeLayout>

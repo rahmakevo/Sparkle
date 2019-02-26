@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.ReviewsFragment">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/bgForgot">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black_button"
+                android:text="4.1"
+                android:textStyle="bold"
+                android:textSize="17sp"
+                android:id="@+id/textViewReview"/>
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_toEndOf="@+id/textViewReview"
+                android:layout_alignTop="@+id/textViewReview"
+                android:layout_marginStart="20dp"
+                android:src="@drawable/image_reviews"
+                android:id="@+id/imageReviewOne"
+                android:contentDescription="@string/reviews_about"/>
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_toEndOf="@+id/imageReviewOne"
+                android:layout_alignTop="@+id/imageReviewOne"
+                android:layout_marginStart="5dp"
+                android:src="@drawable/image_reviews"
+                android:id="@+id/imageReviewTwo"
+                android:contentDescription="@string/reviews_about"/>
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_toEndOf="@+id/imageReviewTwo"
+                android:layout_alignTop="@+id/imageReviewTwo"
+                android:layout_marginStart="5dp"
+                android:src="@drawable/image_reviews"
+                android:id="@+id/imageReviewThree"
+                android:contentDescription="@string/reviews_about"/>
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_toEndOf="@+id/imageReviewThree"
+                android:layout_alignTop="@+id/imageReviewThree"
+                android:layout_marginStart="5dp"
+                android:src="@drawable/image_reviews"
+                android:id="@+id/imageReviewFour"
+                android:contentDescription="@string/reviews_about"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignTop="@+id/textViewReview"
+                android:layout_marginEnd="10dp"
+                android:text="429 Reviews"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewReview"
+                android:layout_alignStart="@+id/textViewReview"
+                android:layout_marginTop="10dp"
+                android:text="5 star"
+                android:id="@+id/textFiveStar"/>
+            
+            <ProgressBar
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_toEndOf="@+id/textFiveStar"
+                android:layout_below="@+id/textViewReview"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="7dp"
+                android:progressBackgroundTint="@color/colorText"
+                android:layout_marginEnd="10dp"
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:progress="60"
+                android:id="@+id/progressBarFiveStar"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textFiveStar"
+                android:layout_alignStart="@+id/textFiveStar"
+                android:layout_marginTop="7dp"
+                android:text="4 star"
+                android:id="@+id/textFourStar"/>
+
+            <ProgressBar
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_toEndOf="@+id/textFourStar"
+                android:layout_below="@+id/progressBarFiveStar"
+                android:layout_alignTop="@+id/textFourStar"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="7dp"
+                android:layout_marginEnd="10dp"
+                android:progressBackgroundTint="@color/colorText"
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:progress="80"
+                android:id="@+id/progressBarFourStar"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textFourStar"
+                android:layout_alignStart="@+id/textFourStar"
+                android:layout_marginTop="7dp"
+                android:text="3 star"
+                android:id="@+id/textThreeStar"/>
+
+            <ProgressBar
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_toEndOf="@+id/textThreeStar"
+                android:layout_below="@+id/progressBarFourStar"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="7dp"
+                android:layout_marginEnd="10dp"
+                android:progressBackgroundTint="@color/colorText"
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:progress="60"
+                android:id="@+id/progressBarThreeStar"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textThreeStar"
+                android:layout_alignStart="@+id/textThreeStar"
+                android:layout_marginTop="7dp"
+                android:text="2 star"
+                android:id="@+id/textTwoStar"/>
+
+            <ProgressBar
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:layout_toEndOf="@+id/textTwoStar"
+                android:layout_below="@+id/progressBarThreeStar"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="7dp"
+                android:progressBackgroundTint="@color/colorText"
+                android:layout_marginEnd="10dp"
+                android:progress="30"
+                android:id="@+id/progressBarTwoStar"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textTwoStar"
+                android:layout_alignStart="@+id/textViewReview"
+                android:layout_marginTop="7dp"
+                android:text="1 star"
+                android:id="@+id/textOneStar"
+                android:layout_marginBottom="10dp"/>
+
+            <ProgressBar
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_toEndOf="@+id/textTwoStar"
+                android:layout_below="@+id/textTwoStar"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="7dp"
+                android:layout_marginEnd="10dp"
+                android:progressBackgroundTint="@color/colorText"
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:progress="40"
+                android:id="@+id/progressBarOneStar"/>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</FrameLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.MainActivity">
+
+    <com.synnapps.carouselview.CarouselView
+        android:id="@+id/carouselView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:indicatorMarginVertical="70dp"
+        app:fillColor="@color/colorBlack"
+        app:pageColor="@color/colorWhite"
+        app:radius="4dp"
+        app:pageTransformInterval="2000"
+        app:pageTransformer="zoom"
+        app:slideInterval="3000"
+        app:strokeColor="@color/colorWhite"
+        app:strokeWidth="1dp"/>
+
+</RelativeLayout>
